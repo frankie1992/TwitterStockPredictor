@@ -1,6 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:stock_prediction_and_analysis/StockDetails/StockGeneralInfo.dart';
 import 'package:stock_prediction_and_analysis/StockDetails/StockTickerHeader.dart';
 
 class StockDetailsPage extends StatelessWidget {
@@ -20,6 +21,9 @@ class StockDetailsPage extends StatelessWidget {
                   bottom: 8
               ),
                 child: LineChartSample2()
+            ),
+            Container(
+              child: StockGeneralInfo(),
             )
           ],
         ),
